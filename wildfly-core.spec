@@ -3,7 +3,7 @@
 %global namedversion %{version}%{?namedreltag}
 Name:                wildfly-core
 Version:             2.2.0
-Release:             1
+Release:             2
 Summary:             The core run-time of WildFly
 License:             ASL 2.0 and BSD and LGPLv2+
 URL:                 http://wildfly.org/
@@ -131,5 +131,8 @@ rm target/site/apidocs/javadoc.sh
 %license LICENSE.txt
 
 %changelog
+* Thu Dec 16 2021 wangkai <wangkai385@huawei.com> - 2.2.0-2
+- This package depends on log4j.After the log4j vulnerability CVE-2021-44228 is fixed,the version needs to be rebuild.
+
 * Wed Aug 19 2020 maminjie <maminjie1@huawei.com> - 2.2.0-1
 - package init
